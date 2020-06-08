@@ -2,8 +2,6 @@ flask
 flask_socketio
 flask_login
 flask_bcrypt
-# python-engineio
-# python-socketio
 bs4
 flask_sqlalchemy
 flask_wtf
