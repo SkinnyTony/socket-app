@@ -1,7 +1,9 @@
 flask
 flask_socketio
-python-engineio
-python-socketio
+flask_login
+flask_bcrypt
+# python-engineio
+# python-socketio
 bs4
 flask_sqlalchemy
 flask_wtf
@@ -10,5 +12,5 @@ requests
 gevent
 gevent-websocket
 pyenchant
-flask_bcrypt
-flask_login
+
+
