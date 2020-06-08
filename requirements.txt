@@ -1,4 +1,5 @@
 flask
+pyOpenSSL
 bs4
 flask_sqlalchemy
 flask_wtf
