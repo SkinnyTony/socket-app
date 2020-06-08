@@ -94,11 +94,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         }
     })
 
-    socket.on("undefined", function(data){
-        if (current == current_user){
-            alert(data["word"])
-        }
-    })
 
     socket.on("nicejob", function(data){
         var div = document.querySelector("#flash-msg");

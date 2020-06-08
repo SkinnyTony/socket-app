@@ -9,9 +9,6 @@ from flaskapp.models import User
 
 import secrets
 import requests
-import enchant
-
-dictionary = enchant.Dict("en_US")
 
 @app.route("/")
 def home():
@@ -114,11 +111,9 @@ def handle_leaving(msg):
 @socketio.on("search")
 def handle_search(msg):
     search = msg["search"]
-    if dictionary.check(search):
-        images = getPics(search)
-        emit("images", {"images": images}, room = msg["url"])
-    else:
-        emit("undefined", {"word": "'"+search + "' could not be found in the dictionary, try something else"}, room = msg["url"])
+    images = getPics(search)
+    emit("images", {"images": images}, room = msg["url"])
+
 
 @socketio.on("correct")
 def handle_correct(msg):
