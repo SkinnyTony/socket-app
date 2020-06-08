@@ -5,7 +5,7 @@ from flask_bcrypt import Bcrypt
 from flask_socketio import SocketIO
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "change-b4-deploy?"
+app.config["SECRET_KEY"] = "widqwfp103r21"
 socketio = SocketIO(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///site.sql"
 login_manager = LoginManager(app)
