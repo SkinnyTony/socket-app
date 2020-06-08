@@ -6,6 +6,7 @@ gunicorn
 requests
 flask_socketio
 eventlet
+gevent
 pyenchant
 flask_bcrypt
 flask_login
