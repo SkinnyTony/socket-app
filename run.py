@@ -1,4 +1,4 @@
-# from flaskapp import app, socketio
+from flaskapp import app
 
-# if __name__=="__main__":
-#     socketio.run(app, debug=True)
+if __name__=="__main__":
+    app.run()
