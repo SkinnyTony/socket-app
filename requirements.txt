@@ -1,11 +1,12 @@
 flask
+flask_socketio
+python-engineio
+python-socketio
 bs4
 flask_sqlalchemy
 flask_wtf
 gunicorn
 requests
-flask_socketio
-eventlet
 gevent
 gevent-websocket
 pyenchant
