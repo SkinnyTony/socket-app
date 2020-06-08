@@ -7,7 +7,6 @@ from flaskapp.forms import RegistrationForm, LoginForm
 from flask_login import current_user, login_required, login_user
 from flaskapp.models import User
 
-from OpenSSL import SSL
 import secrets
 import requests
 import enchant

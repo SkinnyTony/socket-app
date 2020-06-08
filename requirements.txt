@@ -1,5 +1,4 @@
 flask
-pyOpenSSL
 bs4
 flask_sqlalchemy
 flask_wtf
@@ -8,6 +7,5 @@ requests
 flask_socketio
 eventlet
 pyenchant
-secrets
 flask_bcrypt
 flask_login
