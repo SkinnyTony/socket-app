@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="results">
+    {% for i in images[0:-2] %}
+        <div class="image-container"><img class="result-image" src="{{i}}" alt="aaa"></div>
+    {% endfor %}
+</div>
+
+
+    <div class="form-container">
+        <form id="form" method="POST" action="">
+            <fieldset class="form-group">
+                <div class="length">
+                    <span class="length">{{images[-2]}}</span>
+                </div>
+
+                <input id="guessbox" autocomplete="off" placeholder="?" value="">
+            </fieldset>
+            <div class="info">
+                <button type="" class="text-outline-btn" onclick="CheckAnswer()">Checkit</button>
+                <p id="lives">3</p>
+                <p>lives left</p>
+            </div>
+        </form>
+        <a href="{{url_for('home')}}">leave game</a>
+    </div>
+
+    <script>
+
+        function CheckAnswer(){
+            if (document.getElementById("guessbox").value.toLowerCase() === "{{images[-1]}}"){
+                return location.reload();
+            }if (document.getElementById("lives").innerHTML == 1){
+                alert("the correct answer was: {{images[-1]}}")
+                location.reload();
+                document.getElementById("guessbox").value = "";
+            }else{
+                event.preventDefault();
+                document.getElementById("lives").innerHTML -= 1;
+                document.getElementById("guessbox").value = "";
+            }
+        }
+    </script>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="button-container">
+        <a href="{{url_for('random')}}" class="home-btn">guess random words</a>
+        <a href="{{url_for('newgame')}}" class="home-btn">play againts a friend</a>
+    </div>
+
+{% endblock content %}

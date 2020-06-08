@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div id="users">
+    
+</div>
+<div id="flash-msg">
+
+</div>
+<div id="flash-msg-waiting">
+
+</div>
+<input id="current_user" value="{{current_user.username}}">
+<input id="answer" value="">
+
+<div id="results-pvp">
+    
+</div>
+
+<div id="sendguess">
+    <form action="" method="POST">
+        <input id="guess" placeholder="send a guess" value="" autocomplete="off">
+        <button type="submit" id="guess-btn">SEND THE PICS</button>
+
+    </form>
+</div>
+
+<form id="form-vs-friend" method="POST" action="">
+    <fieldset class="form-group">
+        <div class="length">
+            <span id="length"></span>
+        </div>
+
+        <input id="guessbox" autocomplete="off" placeholder="?" value="">
+    </fieldset>
+    <div class="info">
+        <button type="" class="text-outline-btn" id="check-btn">Checkit</button>
+        <p id="lives">3</p>
+        <p>lives left</p>
+    </div>
+</form>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+<script src="{{url_for('static', filename='scripts/sockets.js') }}"></script>
+<!-- <script type="text/javascript" charset="utf-8">
+
+</script> -->
+
+{% endblock content %}
