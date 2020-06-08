@@ -3,6 +3,7 @@ flask_socketio
 flask_login
 flask_bcrypt
 bs4
+pyenchant
 flask_sqlalchemy
 flask_wtf
 gevent
@@ -12,6 +13,6 @@ gunicorn
 requests
 python-engineio
 python-socketio
-pyenchant
+
 
 
