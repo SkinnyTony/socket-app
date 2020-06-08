@@ -1,1 +1,1 @@
-from flaskapp import app, socketio
+from flaskapp import app
