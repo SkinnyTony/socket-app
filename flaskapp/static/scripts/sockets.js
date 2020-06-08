@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         }
     })
 
-
     socket.on("nicejob", function(data){
         var div = document.querySelector("#flash-msg");
         
