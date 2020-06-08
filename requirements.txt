@@ -5,10 +5,13 @@ flask_bcrypt
 bs4
 flask_sqlalchemy
 flask_wtf
-gunicorn
-requests
 gevent
 gevent-websocket
+greenlet
+gunicorn
+requests
+python-engineio
+python-socketio
 pyenchant
 
 
